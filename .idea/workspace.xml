@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da1af0a9-2e1e-4e3d-8cc4-dbf57df6ef62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/goWeb/templates/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goWeb/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goWeb/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goWeb/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goWeb/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/Concurrency/BT_Dua_Do.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/exception/defer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/exception/panic.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/exception/time.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/Todo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/data.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/event.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/readFileJson.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/todos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/todos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goroutine/doQuaSong.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/goroutine/random.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/oopGolang/Candidate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/oopGolang/Officer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/oopGolang/Town.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/readAndWriteFile/WriteFileCSV.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/readAndWriteFile/readFileCSV.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_Go/readAndWriteFile/writeFileYAML.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goWeb/TodoGin.go" beforeDir="false" afterPath="$PROJECT_DIR$/goWeb/TodoGin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goWeb/TodoMux.go" beforeDir="false" afterPath="$PROJECT_DIR$/goWeb/TodoMux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goWeb/template/todos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goWeb/todos.json" beforeDir="false" afterPath="$PROJECT_DIR$/todos.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/go/go1.17.2" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1zhjfFWUA1OlyWjTHHgqatlegdX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/goWeb" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lab_Go" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.add.html">
+    <configuration name="go build WriteFileCSV.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Lab_Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Lab_Go/WriteFileCSV.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build doQuaSong.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Lab_Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Lab_Go/goroutine/doQuaSong.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build doQuaSong.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Lab_Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Lab_Go/doQuaSong.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build officer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Lab_Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/officer.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build random.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Lab_Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Lab_Go/goroutine/random.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="add.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Lab_Go/goWeb/templates/add.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Lab_Go/goWeb/templates/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build Lab_Go" />
+      <item itemvalue="Go Build.go build doQuaSong.go" />
+      <item itemvalue="Go Build.go build doQuaSong.go (1)" />
+      <item itemvalue="Go Build.go build officer.go" />
+      <item itemvalue="Go Build.go build random.go" />
+      <item itemvalue="Go Build.go build WriteFileCSV.go" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.add.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.add.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

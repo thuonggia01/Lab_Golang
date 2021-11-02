@@ -1,0 +1,29 @@
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Created</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{range .}}
+    <tr>
+        <td>{{.Id}}</td>
+        <td>{{.Title}}</td>
+        <td>{{.Description}}</td>
+        <td>{{.Created}}</td>
+        <td><a href="/todos/edit/{{.Id}}">Update</a></td>
+        <td><a href="/todos/delete/{{.Id}}">Delete</a></td>
+    </tr>
+    {{end}}
+    </tbody>
+</table>
+<label >total number of records </label><br/>
+<button>last</button>
+<button>next</button>
+<a href="/add">New</a>
