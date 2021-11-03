@@ -5,37 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da1af0a9-2e1e-4e3d-8cc4-dbf57df6ef62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/goWeb/templates/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goWeb/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goWeb/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goWeb/templates/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goWeb/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectDB/assets/template/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connectDB/assets/template/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/Concurrency/BT_Dua_Do.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/exception/defer.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/exception/panic.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/exception/time.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/Todo.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/data.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/event.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/readFileJson.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/todos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goWeb/todos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goroutine/doQuaSong.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/goroutine/random.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/oopGolang/Candidate.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/oopGolang/Officer.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/oopGolang/Town.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/readAndWriteFile/WriteFileCSV.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/readAndWriteFile/readFileCSV.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_Go/readAndWriteFile/writeFileYAML.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goWeb/TodoGin.go" beforeDir="false" afterPath="$PROJECT_DIR$/goWeb/TodoGin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goWeb/TodoMux.go" beforeDir="false" afterPath="$PROJECT_DIR$/goWeb/TodoMux.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goWeb/template/todos.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/goWeb/todos.json" beforeDir="false" afterPath="$PROJECT_DIR$/todos.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/assets/template/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/assets/template/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/assets/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/assets/template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/driver/postgres_driver.go" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/driver/postgres_driver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/handler/todo_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/handler/todo_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectDB/repository/todo_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/connectDB/repository/todo_repo.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +30,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/go/go1.17.2" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../go/go1.17.2" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -93,7 +73,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/goWeb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -105,13 +85,22 @@
       <recent name="$PROJECT_DIR$/Lab_Go" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.add.html">
+  <component name="RunManager" selected="Go Build.go build connectDB">
     <configuration name="go build WriteFileCSV.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="Lab_Go" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/Lab_Go/WriteFileCSV.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build connectDB" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Lab_Golang" />
+      <working_directory value="$PROJECT_DIR$/connectDB" />
+      <kind value="PACKAGE" />
+      <package value="connectDB" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/connectDB/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build doQuaSong.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
@@ -146,10 +135,16 @@
       <filePath value="$PROJECT_DIR$/Lab_Go/goroutine/random.go" />
       <method v="2" />
     </configuration>
+    <configuration name="add.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Lab_Golang/connectDB/assets/template/add.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="add.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Lab_Go/goWeb/templates/add.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Lab_Go/goWeb/templates/index.html" useBuiltInWebServerPort="true">
+    <configuration name="delete.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Lab_Golang/connectDB/assets/template/delete.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="edit.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Lab_Golang/connectDB/assets/template/edit.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <list>
@@ -159,13 +154,19 @@
       <item itemvalue="Go Build.go build officer.go" />
       <item itemvalue="Go Build.go build random.go" />
       <item itemvalue="Go Build.go build WriteFileCSV.go" />
-      <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="JavaScript Debug.add.html" />
+      <item itemvalue="Go Build.go build connectDB" />
+      <item itemvalue="JavaScript Debug.add.html (1)" />
+      <item itemvalue="JavaScript Debug.edit.html" />
+      <item itemvalue="JavaScript Debug.delete.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build connectDB" />
+        <item itemvalue="JavaScript Debug.add.html (1)" />
+        <item itemvalue="JavaScript Debug.edit.html" />
+        <item itemvalue="JavaScript Debug.delete.html" />
         <item itemvalue="JavaScript Debug.add.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>

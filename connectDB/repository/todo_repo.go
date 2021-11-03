@@ -3,52 +3,41 @@ package repository
 import (
 	"connectDB/driver"
 	"connectDB/model"
-	"github.com/gin-gonic/gin"
+	"log"
 )
 
-func FindAllTodos(c *gin.Context) ([]model.Todo){
-db,_ := driver.Connect()
+func FindAllTodos() ([]model.Todo){
+db,err := driver.Connect()
+	if err != nil {
+		panic(err)
+	}
+//defer db.Close()
 	var todos []model.Todo
 	db.Find(&todos)
-
 	return todos
 }
-//func SaveTodo(c *gin.Context) {
-//	db,err := driver.Connect()
-//	if err != nil {
-//		panic(err)
-//	}
-//	newTodo :=model.Todo{
-//		Model:       gorm.Model{},
-//		Title:       c.PostForm(""),
-//		Description: c.PostForm(""),
-//		Status:      true,
-//	}
-//	db.Save(&newTodo)
-//}
-//func UpdateTodo(c *gin.Context) {
-//	db,err := driver.Connect()
-//	if err != nil {
-//		panic(err)
-//	}
-//	newTodo :=model.Todo{
-//		Model:       gorm.Model{},
-//		Title:       c.PostForm(""),
-//		Description: c.PostForm(""),
-//		Status:      true,
-//	}
-//	db.Model(&newTodo).Where("id = ?", newTodo.ID).Update(newTodo)
-//}
-//func DeleteTodo(c *gin.Context) {
-//	db,err := driver.Connect()
-//	if err != nil {
-//		panic(err)
-//	}
-//	newTodo :=model.Todo{
-//		Model:       gorm.Model{},
-//		Title:       c.PostForm(""),
-//		Description: c.PostForm(""),
-//		Status:      true,
-//	}
-//	db.Delete(&model.Todo{},newTodo.ID)
-//}
+func NewTodo (newTodo model.Todo){
+	db,err := driver.Connect()
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	//defer db.Close()
+	db.Create(&newTodo)
+	log.Println("created")
+}
+func UpdateTodo(newTodo model.Todo,idTodo int) {
+	db,err := driver.Connect()
+	if err != nil {
+		panic(err)
+	}
+	db.Model(&newTodo).Where("id = ?", idTodo).Update(newTodo)
+}
+func DeleteTodo(idTodo int) {
+	db,err := driver.Connect()
+	if err != nil {
+		panic(err)
+	}
+
+	db.Delete(&model.Todo{},idTodo)
+}

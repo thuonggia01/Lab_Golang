@@ -11,9 +11,11 @@ func main() {
 	router := gin.Default()
 	router.Static("assets","./assets")
 	router.LoadHTMLGlob("./assets/**/*.html")
-	//router.GET("/add", handler.AddTodo)
 	router.GET("/",handler.FindAllTodos)
-	//router.GET("/detail/:name", handler.DeleteTodo)
+	router.GET("/add", handler.AddTodo)
+	//router.POST("/add", handler.AddTodo)
+	router.GET("/edit/:id",handler.EditTodo)
+	router.GET("/delete/:id",handler.DeleteTodo)
 	router.Run(":8080")
 }
 
