@@ -263,36 +263,30 @@
 </head>
 <body>
 <div class="container">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form  action="/update/{{.ID}}" method="post">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Update Todo</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Title</label>
-                            <input type="text" class="form-control" required name="title">
-                        </div>
-                        <div class="form-group">
-                            <label>Description</label>
-                            <input type="text" class="form-control" required name="description">
-                        </div>
-                        <div class="form-group">
-                            <label>Status&nbsp;&nbsp;&nbsp;</label>
-                            <input type="radio"  name="status" value="true" checked>True&nbsp;&nbsp;&nbsp;&nbsp;
-                            <input type="radio"  name="status" value="false">Flase
-                        </div>
 
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form action="/" method="post">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Task Todo</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>List user</label>                 
+                        <select  class="form-control"required name="list-user" id="list-user">
+                            {{range .user}}
+                            <option value="value01">{{ .name }}</option>
+                            {{end}}
+                            </select>
                     </div>
-                    <div class="modal-footer">
-                        <a href="/" class="btn btn-danger">Cancel</a>
-                        <input type="submit" class="btn btn-success" value="Update">
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="/" class="btn btn-danger">Cancel</a>
+                    <input type="submit" class="btn btn-success" value="submit">
+                </div>
+            </form>
         </div>
+    </div>
 </div>
 </body>
 </html>
