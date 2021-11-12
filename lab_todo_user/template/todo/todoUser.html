@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    {{ template "inc/head.html"}}
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-1">
+                <a type="button" class="btn btn-dark pl-5 pr-5" href="/add">ADD</a>
+            </div>
+            <div class="col-9"></div>
+        </div>
+        <table class="table table-hover table-primary mt-2 text-center">
+            <header>
+                <th>Title</th>
+                <th>Name</th>
+                <th>Done</th>
+            </header>
+            <tbody>
+                {{range .User}}
+                <tr>
+                    <td>
+                        <div class="text-left">
+                            <label for="cbox4" class="text-xxl-center">{{.Title}}</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <label for="cbox4" class="text-xxl-center">{{.Name}}</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group offset-5">
+                            <form action="" method="post">
+                                <span class="input-group-addon">
+                                    <input type="checkbox" name="Done" id="Done" class="text-center"
+                                        value="{{.Status}}">
+                                </span>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+        <a type="button" class="btn btn-primary btn-sm  mr-25" href="/">Back</a>
+    </div>
+</body>
+{{ template "inc/footer.html" }}
+
+<script>
+    $(document).ready(function () {
+        var checkbox = document.getElementsByName("Done");
+        for (var i = 0; i < checkbox.length; i++) {
+            var a = checkbox[i].value
+            if (a == "false") {
+                checkbox[i].checked = false;
+            } else {
+                checkbox[i].checked = true;
+            }
+        };
+    });
+// TOdo
+</script>
+
+</html>

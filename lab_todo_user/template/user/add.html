@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    {{ template "inc/head.html"}}
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <form action="/add" method="post">
+                    <div>
+                        <div class="form-group">
+                            <label for="">Title</label>
+                            <input type="text" class="form-control" name="title" id="">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="">Description</label>
+                                <textarea class="form-control" name="description" id="" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label for="">Pefrom</label>
+                                <select id="Preform" name="preform">
+                                    {{range .User}}
+                                    <option value="{{.ID}}">{{.Name}}</option>
+                                    {{end}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <input name="" id="" class="btn btn-outline-success" type="submit" value="ADD">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+{{ template "inc/footer.html" }}
+
+</html>

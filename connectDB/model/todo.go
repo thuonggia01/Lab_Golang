@@ -1,18 +1,30 @@
 package model
 
 import (
+	"time"
+
 	"github.com/jinzhu/gorm"
 )
 
-type User struct {
-	gorm.Model
-	Name  string
-	Todos []Todo //`gorm:" ForeignKey: UserId "`
-}
-type Todo struct {
-	gorm.Model
-	Title       string
-	Description string
-	Status      bool
-	UserID      uint
-}
+type (
+	Todo struct {
+		gorm.Model
+		Title       string
+		Description string
+		Status      bool
+		UserId      int `gorm:"column:user_id"`
+	}
+	TodoUsers struct {
+		Title  string
+		Status bool
+		Name   string
+	}
+
+	FindTodo struct {
+		Title       string
+		Name        string
+		CreatedAt   time.Time
+		Description string
+		Status      bool
+	}
+)

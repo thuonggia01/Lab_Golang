@@ -1,26 +1,30 @@
 package main
 
 import (
-	"connectDB/driver"
-	"connectDB/handler"
-
-	"github.com/gin-gonic/gin"
+	"connectDB/app"
+	"connectDB/helpers/config"
+	"flag"
+	"os"
 )
 
 func main() {
-	driver.Connect()
-	router := gin.Default()
-	router.Static("assets", "./assets")
-	router.LoadHTMLGlob("./assets/**/*.html")
-	router.GET("/", handler.FindAllTodos)
-	router.GET("/addTodo", handler.AddTodo)
-	router.POST("/saveTodo", handler.SaveTodo)
-	// router.GET("/edit/:id", handler.EditTodo)
-	// router.POST("/update/:id", handler.UpdateTodo)
-	router.GET("/delete/:id", handler.DeleteTodo)
+	env := flag.String("env", "local", "application runtime environment")
+	flag.Parse()
+	config.Loads("config.yml")
 
-	//task
-	router.GET("/addTask", handler.AddUsersTask)
-	// router.POST("/saveTask", handler.)
-	router.Run(":8080")
+	switch *env {
+	case config.EnvProduction:
+		config.SetEnv(config.EnvProduction)
+	case config.EnvTesting:
+		config.SetEnv(config.EnvTesting)
+	case config.EnvLocal:
+		config.SetEnv(config.EnvLocal)
+	default:
+		os.Exit(1)
+	}
+
+	err := app.Route()
+	if err != nil {
+		panic(err.Error())
+	}
 }

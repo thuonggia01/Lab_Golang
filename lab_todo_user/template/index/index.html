@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    {{ template "inc/head.html"}}
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <a type="button" class="btn btn-success" href="/add">Add a Todo</a>
+          
+                <a type="button" class="btn btn-success " href="/AddUser">Add a user</a>
+            
+                <a type="button"class="btn btn-primary pl-5 pr-5" href="/todoUser">List Todo Of User</a>
+            </div>
+        </div>
+        <br/>
+        <hr/>
+        <div class="row">
+            <form action="/find" method="post">
+                <input type="text" clamss="btn btn-light" placeholder="Nhập Title" name="findtitle" style="width:150px">
+                <input type="date" class="btn btn-light" name="finddate">
+                <button type="submit" class="btn btn-secondary">Search Todo Of User</button>
+            </form>
+        </div>
+        <br/>
+        <br/>
+        <table class="table table-hover table-primary mt-2 text-center">
+            <header>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Time</th>
+                <th>Done</th>
+                <th class="col-3"></th>
+            </header>
+            <tbody>
+                {{range $key, $value := .Data}}
+                <tr>
+                    <td>
+                        <div class="text-left">
+                            <label for="cbox4" class="text-xxl-center">{{$value.Todo.Title}}</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <label for="cbox4" class="text-xxl-center">{{$value.Todo.Description}}</label>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="row-2">
+                            <label for="cbox4" class="text-xxl-center">{{$value.Time}}</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-group offset-5">
+                            <form action="" method="post">
+                                <span class="input-group-addon">
+                                    <input type="checkbox" name="Done" id="Done" class="text-center"
+                                        value="{{$value.Todo.Status}}">
+                                </span>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-center">
+                            <a type="button" class="btn btn-primary btn-sm  mr-25"
+                                href="/update/{{$value.Todo.Model.ID}}">Edit</a>
+                            <a type="button" class="btn btn-danger btn-sm " href="/{{$value.Todo.Model.ID}}">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </div>
+</body>
+{{ template "inc/footer.html" }}
+
+<script>
+    $(document).ready(function () {
+        var checkbox = document.getElementsByName("Done");
+        for (var i = 0; i < checkbox.length; i++) {
+            var a = checkbox[i].value
+            if (a == "false") {
+                checkbox[i].checked = false;
+            } else {
+                checkbox[i].checked = true;
+            }
+        };
+    });
+
+    function confirm(e) {
+        alert("á ")
+        var tag = document.getElementById("person")
+        $('person').change(function () {
+            console.log($(this).val())
+        });
+    }
+</script>
+
+</html>
